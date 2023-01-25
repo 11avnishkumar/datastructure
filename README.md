@@ -1,7 +1,5 @@
 # Datastructure Using C++
 
-* Introduction
-  * Definition
 * Recursion
   * Head Recursion
   * Tail Recursion

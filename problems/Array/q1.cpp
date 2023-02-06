@@ -1,6 +1,6 @@
 /* 
 Finding a misssing element in an sorted array that is if the element
-in an array is first N natural number.
+in an array of first N natural number.
 */
 #include<iostream>
 using namespace std;

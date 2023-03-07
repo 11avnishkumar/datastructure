@@ -98,7 +98,7 @@ What is character set and ASCII codes?
 | A-Z, 65-90  | Upper Case alphabets                                                                                                                            |
 | a-z, 97-122 | Lower Case alphabets                                                                                                                            |
 | 0-9, 48-57  | For Numerical value                                                                                                                             |
-| Note:       | Apart from above characters there are some special characters available for like (,),?,+,-,* and son on.                                        |
+| Note:       | Apart from above characters there are some special characters available for like (,),?,+,-,`*` and son on.                                        |
 | Note        | There are total 128 ASCII characters that is from  0 - 127 ASCII characters are availble.To represent a single ASCII characters it take 7 bits. |
 
 * Unicode's - are represented using 2 byte memory that is 16-bit.  
@@ -384,8 +384,8 @@ Doubley circular liked list is the mostly used.
 
 ## Graph
 
-* A graph G (V,E) is the set of vertices and edges.  
-* There are various type of graph available, below are the some examples.  
+* A graph G (V, E) is the set of vertices and edges.  
+* There are various type of graph available, below are some examples.  
   * Directed Graph
     * A directed graph is a graph that has some directions.
     * In directed graph edges are represented by arrows and they tells the directions.
@@ -399,7 +399,7 @@ Doubley circular liked list is the mostly used.
 ## What is STL?
 
 * STL stands for 'Standard Template Language'.
-* It contains a list of class - Algorith,containers,iterator.
+* It contains a list of class - Algorithm, containers, iterator.
 * In Real world we use STL to perform operations on a large collection of data.
 * Some Example of STL are:
   * Vector
@@ -409,7 +409,7 @@ Doubley circular liked list is the mostly used.
   * Priority Queue
   * Stack
   * Set
-  * Mutliset
+  * Multiset
   * Map
   * Multimap
 
@@ -506,12 +506,12 @@ int main(){
 
 
 ## Hashing
-* Hashing is used to searching
+* It is used for searching
 * Note linear and binary search is still slower because they have to time complexity `O(n) and O(logn)` respectively.
 * We need to still faster algorithms that have the time complexity `O(1)`,so here comes the hashing technique.
 
 * Explanation of the hashing.
-* if we have some set of keys or set of elements.
+* If we have some set of keys or set of elements.
 ```c++
 keys : 8,3,6,10,15,18,14;
 
@@ -526,12 +526,14 @@ element 6 will be at index 6.
 element 10 will be at index 10.
 element 15 will be at index 15.
 and so on...
-
-// Drawbacks
- No doubt that we will find the element at O(1) time compelexity but we have to pay the cost for the space complexity and that will be very high.
- In above example we have the highest element is 18, and we have to take the array of that size,but in reality we have only 7 element,for 7 element we have to make the size of the array 18,that is two high.
- 
-*/
-
-
 ```
+* Drawbacks
+ * No doubt that we will find the element at O(1) time complexity, but we have to pay the cost for the space complexity and that will be very high.
+
+ * In above example we have the highest element is 18, and we have to take the array of that size, but in reality we have only 7 elements, for 7 elements we have to make the size of the array 18,that is too much.
+ 
+ ## Hashing using function
+ * Ideal hashing
+  * It is not useful because it consumes huge memory.
+ * Modulus hashing
+  * It is not useful because of collision for the same value.

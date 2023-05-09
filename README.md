@@ -16,15 +16,10 @@
 <!-- TOC -->
 
 # Introduction to Datastructures
-
-## What is a data structure?
-
 Data Structure is -
 A way to store elements so that they can be used efficiently and effectively.
 
 ## Recursion
-
-* what is Recursion?
 
   * When a function call itself then it is called recursion.
 
@@ -507,19 +502,20 @@ int main(){
 
 ## Hashing
 * It is used for searching
-* Note linear and binary search is still slower because they have to time complexity `O(n) and O(logn)` respectively.
-* We need to still faster algorithms that have the time complexity `O(1)`,so here comes the hashing technique.
+* The idea of hashing searching is introduced over the `Linear` and `Binary` Search.
+* Note linear and binary search is still slower because they have time complexity of `O(n) and O(logn)` respectively.
+* We still need faster algorithms that have the time complexity `O(1)`,so here comes the hashing technique.
 
 * Explanation of the hashing.
 * If we have some set of keys or set of elements.
 ```c++
 keys : 8,3,6,10,15,18,14;
 
-// we need an array of size equal to the highest element of present in the key that is 18
+// we need an array of size equal to the highest element present in the key that is 18
 
-// The element in the key will became the index in the array.
+// All The element in the key will became the index in the array.
 
-// for example element will 8 will be at index 8
+// for example element 8 will be at index 8
 /*
 element 3 will be at index 3.
 element 6 will be at index 6.
@@ -528,12 +524,35 @@ element 15 will be at index 15.
 and so on...
 ```
 * Drawbacks
- * No doubt that we will find the element at O(1) time complexity, but we have to pay the cost for the space complexity and that will be very high.
-
+ * No doubt that we will find the element at `O(1) time complexity`, but we have to pay the cost for the space complexity and that will be very high.
  * In above example we have the highest element is 18, and we have to take the array of that size, but in reality we have only 7 elements, for 7 elements we have to make the size of the array 18,that is too much.
- 
- ## Hashing using function
+* Mathematical Model for hashing
+
+There are total `4` Relational Mapping.
+ * one-one (function)
+ * one-many
+ * many-one (function)
+ * many-many
+
+## Hashing function
+![hashing0](https://user-images.githubusercontent.com/90856122/226932085-e6b8461a-f324-497b-b755-6d733804ab1b.png)
+* The function we have used in ideal hashing is `h(x) = x`.
  * Ideal hashing
   * It is not useful because it consumes huge memory.
  * Modulus hashing
+  * Modulus hashing also called many-to-one-mapping
+  * for Modulus hashing we have changed the ideal function to convert it into the modulus function.
+  * The modulus function is `h(x) = x % 10`.
   * It is not useful because of collision for the same value.
+* The Solution of collision is 
+![Comparison-of-Separate-Chaining-and-Open-Addressing](https://user-images.githubusercontent.com/90856122/226957186-3720c9c5-b0c8-4780-a2b2-ec204f641ff8.png)
+  * Open Hashing (We can have extra space if we want).
+    * chaining
+  * Closed hashing (We have to utilize the only given space,no extra space)
+    * Open Addressing
+      * Linear Probing
+      * Quadratic Probing
+      * Double hashing
+### chaining
+
+

@@ -535,7 +535,7 @@ There are total `4` Relational Mapping.
  * many-many
 
 ## Hashing function
-![hashing0](https://user-images.githubusercontent.com/90856122/226932085-e6b8461a-f324-497b-b755-6d733804ab1b.png)
+![hashing](https://user-images.githubusercontent.com/90856122/226932085-e6b8461a-f324-497b-b755-6d733804ab1b.png)
 * The function we have used in ideal hashing is `h(x) = x`.
  * Ideal hashing
   * It is not useful because it consumes huge memory.

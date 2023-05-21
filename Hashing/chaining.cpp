@@ -11,7 +11,7 @@ using std::vector;
 using std::list;
 class Hashing{
   // declare the array of linkedlist
-  vector<list<int>> hashTable{10}; // will store 20 linked list
+  vector<list<int>> hashTable{10}; // will store 10 linked list
   // private method
   int hashfunction(int key){ return key % 10; }
   // The index returned by hashfunction will be stored in a hashtable
